@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Borneo Spot Hunt — Cari 7 Perbedaan</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0a1c28; height: 100%; overflow: hidden; }
+  body { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; font-family: sans-serif; }
+  #wrap { width: min(100vw, calc((100vh - 34px) * 16 / 9)); }
+  canvas { display: block; width: 100%; height: auto; background: #0e2f42; cursor: pointer; }
+  #status { color: #cfe8f5; font-size: 14px; text-align: center; padding: 8px 12px; margin: 0; height: 18px; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720" aria-label="Borneo Spot Hunt: game cari perbedaan. Dua gambar berdampingan, klik 7 perbedaan di setiap level."></canvas>
+  <p id="status" role="status" aria-live="polite">Borneo Spot Hunt — memuat…</p>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
